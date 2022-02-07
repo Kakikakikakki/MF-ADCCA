@@ -1,5 +1,5 @@
-# A-MFDCCA
-codes for A-MFDCCA
+# MF-ADCCA
+codes for MF-ADCCA: MF-ADCCA_code.py
 
 -Available in python3
 
