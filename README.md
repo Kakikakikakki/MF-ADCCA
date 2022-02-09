@@ -1,14 +1,14 @@
 # MF-ADCCA
 codes for MF-ADCCA: MF-ADCCA_code.py
 
--Available in python3
+- Available in python3
 
--Please import "numpy" and "math"
+- Please import "numpy" and "math"
 
--Can implement MF-ADCCA including DFA, DCCA, A-DFA, A-DCCA, MFDFA, MFDCCA, A-MFDFA analysis.
+- Can implement MF-ADCCA including DFA, DCCA, A-DFA, A-DCCA, MFDFA, MFDCCA, A-MFDFA analysis.
 
 ## paper
--S. Kakinaka and K. Umeno, Exploring asymmetric multifractal cross-correlations of price-volatility and asymmetric volatility dynamics in cryptocurrency markets. Physica A 581, 126237 (2021) https://doi.org/10.1016/j.physa.2021.126237
+- S. Kakinaka and K. Umeno, Exploring asymmetric multifractal cross-correlations of price-volatility and asymmetric volatility dynamics in cryptocurrency markets. Physica A 581, 126237 (2021) https://doi.org/10.1016/j.physa.2021.126237
 
 ## Usage
 
@@ -22,7 +22,7 @@ If one wants to implement the return-based A-DFA using financial price series, t
 
 ## Return
 
-S, Fqs, Fhq, S, Fqs_plus, Fhq_plus, S, Fqs_minus, Fhq_minus
+list: [S, Fqs, Fhq, S, Fqs_plus, Fhq_plus, S, Fqs_minus, Fhq_minus]
 - 1-2: estimates for overall trend, 4-5: estimates for positive trend, 7-8: estimates for negative trend
 - S: scales, Fqs: fluctuation functions, Fhq: generalized hurst exponent
 
