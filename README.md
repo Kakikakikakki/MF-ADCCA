@@ -8,6 +8,8 @@ codes for MF-ADCCA: MF-ADCCA_code.py
 - Can implement MF-ADCCA including DFA, DCCA, A-DFA, A-DCCA, MFDFA, MFDCCA, A-MFDFA analysis.
 
 ## paper
+when using this code, please cite the following paper:
+
 - S. Kakinaka and K. Umeno, Exploring asymmetric multifractal cross-correlations of price-volatility and asymmetric volatility dynamics in cryptocurrency markets. Physica A 581, 126237 (2021) https://doi.org/10.1016/j.physa.2021.126237
 
 ## Usage
