@@ -12,6 +12,8 @@ codes for MF-ADCCA: MF-ADCCA_code.py
 
 ## Usage
 
+There are three patterns of asymmetric versions related to DFA-based analysis:
+
 If one wants to implement the index-based MF-ADCCA using log-return financial series, then
 
 	basic_dcca(x, y, Q, m=2, trend_base=None, skip_agg=False, observations=100, asymmetry_base='index')
@@ -19,6 +21,10 @@ If one wants to implement the index-based MF-ADCCA using log-return financial se
 If one wants to implement the return-based A-DFA using financial price series, then
 
 	basic_dcca(x, x, Q=2, m=2, trend_base=None, skip_agg=True, observations=100, asymmetry_base='return')
+
+If one wants to designate a specific series for the benchmark aganist defining asymmetry, then by using your own series at hand,
+	
+	basic_dcca(x, x, Q=2, m=2, trend_base=my_series, skip_agg=True, observations=100, asymmetry_base='optional')
 
 ## Return
 
@@ -38,4 +44,13 @@ list: [S, Fqs, Fhq, S, Fqs_plus, Fhq_plus, S, Fqs_minus, Fhq_minus]
                                Its not needed.
             asymmetry_base  : Which criterion used for defining asymmetric trends.
         Returns:
-            array(float)     : Return generalized hurst exponent (in np.array) of each Q-th order.
+            array(float)     : list of estimates e.g., Return generalized hurst exponent (in np.array) of each Q-th order.
+
+## Further parameter settings for estimation
+
+You can rearrange the parameters necessary for implmenting the analysis.
+- observations: the number of observational scale points used for the log-log linear fit when estimating (genralized) Hurst exponents (default at 100).
+- scales are set at:
+    s_min = max(20, int(np.floor(N/100)))
+    s_max = min(20*s_min, int(np.floor(N/10)))
+  
