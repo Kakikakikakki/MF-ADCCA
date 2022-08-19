@@ -49,8 +49,6 @@ list: [S, Fqs, Fhq, S, Fqs_plus, Fhq_plus, S, Fqs_minus, Fhq_minus]
 ## Further parameter settings for estimation
 
 You can rearrange the parameters necessary for implmenting the analysis.
-- observations: the number of observational scale points used for the log-log linear fit when estimating (genralized) Hurst exponents (default at 100).
-- scales are set at:
-    s_min = max(20, int(np.floor(N/100)))
-    s_max = min(20*s_min, int(np.floor(N/10)))
+- observations: the number of observational scale points used for the log-log linear fit when estimating (genralized) Hurst exponents (default set at 100).
+- scales are set at: s_min = max(20, int(np.floor(N/100))), s_max = min(20*s_min, int(np.floor(N/10)))
   
