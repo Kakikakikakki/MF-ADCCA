@@ -16,9 +16,10 @@ when using this code, please cite the following paper:
 
 There are three patterns of asymmetric versions related to DFA-based analysis:
 
-If one wants to implement the index-based MF-ADCCA using log-return financial series, then
+If one wants to implement the index-based MF-ADCCA using financial return series (log-returns), then
 
 	basic_dcca(x, y, Q=2, m=2, trend_base=None, skip_agg=False, observations=100, asymmetry_base='index')
+The asymmetry_base can be set as : 'index', when you want the rise and fall of index itself to be  the criterion to define up and down trends.
 
 If one wants to implement the return-based A-DFA using financial price series, then
 
